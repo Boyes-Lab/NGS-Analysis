@@ -22,7 +22,7 @@ This Python script filters sequences from a FASTQ file based on the presence of 
 
 ### Example
 
-If your input file is `sample.fastq` and you are looking for motifs `AGCT` and `TCGA`, you should set `motif1 = "AGCT"` and `motif2 = "TCGA"`, and `input_file = "sample.fastq"`.
+If your input file is `sample.fastq` and you are looking for motifs `AGCT` and `TCGA`, you should set `motif1 = "AGCT"` and `motif2 = "TCGA"`, and `input_file = "sample.fastq"`. For clonotype identifcation, these motifs will be the reference 5 bp sequence in the IGLJ region of interest and the reference 5 bp sequence in the IGLV region of interest, around 20 bp away from where the V-J Junction will be. 
 
 ### Output
 
@@ -69,7 +69,7 @@ Clonotype_analysis_code1.py
      - `Frequency`: Number of occurrences of each sequence.
 
 **4. Example:**
-   - Suppose `motif1 = "START"` and `motif2 = "END"`. The script will find all sequences between these motifs in your FASTA file and count their occurrences.
+   - Suppose `motif1 = "START"` and `motif2 = "END"`. The script will find all sequences between these motifs in your FASTA file and count their occurrences. For clonotype identifcation, these motifs will be the reference 5 bp sequence in the IGLJ region of interest and the reference 5 bp sequence in the IGLV region of interest, around 20 bp away from where the V-J Junction will be
 
 **5. Notes:**
    - Ensure the filtered FASTA file (`filtered.fasta`) is correctly formatted and contains sequences with headers starting with `>`.
