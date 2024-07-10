@@ -35,49 +35,53 @@ For example, if your input file is `sample.fastq`, the output file will be `samp
 1. Modify the script to set `motif1`, `motif2`, and `input_file`.
 2. Run the script:
 
-```bash
+```bash```
 Clonotype_analysis_code1.py
 
 
 # Clonotype_analysis_code2.py
 
-This Python script extracts unique sequences between specified motifs from a filtered FASTA file and counts their occurrences. It then saves the results in an Excel file.
+**This Python script extracts sequences between specified motifs from a filtered FASTA file and counts their occurrences. It then saves the results in an Excel file.**
 
 ## Requirements
 
-- Python 3.x
-- pandas
-- collections.defaultdict
+**- Python 3.x**
+**- pandas**
+**- collections.defaultdict**
 
 ## Usage
 
-1. **Input:**
-   - Place your filtered FASTA file (`filtered.fasta`) in the same directory as `sequence_extraction.py`. Use output from Clonotype_analysis_code1.py for this. 
+**1. Input:**
+   - Place your filtered FASTA file (`filtered.fasta`) in the same directory as `Clonotype_analysis_code2.py`.
    - Specify the motifs `motif1` and `motif2` in the script that you want to search for.
 
-2. **Running the Script:**
+**2. Running the Script:**
    - Open a terminal or command prompt.
    - Navigate to the directory containing `Clonotype_analysis_code2.py`.
    - Run the script using Python:
      ```bash
-     Clonotype_analysis_code2.py
+      Clonotype_analysis_code2.py
      ```
 
-3. **Output:**
+**3. Output:**
    - The script will generate an Excel file (`filtered_output.xlsx`) containing two columns:
      - `Sequence`: Extracted sequences between `motif1` and `motif2`.
      - `Frequency`: Number of occurrences of each sequence.
 
-4. **Example:**
+**4. Example:**
    - Suppose `motif1 = "START"` and `motif2 = "END"`. The script will find all sequences between these motifs in your FASTA file and count their occurrences.
 
-5. **Notes:**
+**5. Notes:**
    - Ensure the filtered FASTA file (`filtered.fasta`) is correctly formatted and contains sequences with headers starting with `>`.
    - Modify `motif1` and `motif2` variables in the script according to your specific motifs of interest.
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+**This project is licensed under the MIT License - see the LICENSE file for details.**
+
+
+
+
 
 
 
